@@ -1,4 +1,4 @@
-### NestJS + Sequelize + Serverlesse boilerplate
+### NestJS + Sequelize + Serverless boilerplate
 
 ### Installation
 
