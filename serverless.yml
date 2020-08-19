@@ -24,4 +24,16 @@ functions:
     - http:
         cors: true
         path: 'users'
-        method: any
+        method: get
+    - http:
+        cors: true
+        path: 'users/{id}'
+        method: get
+    - http:
+        cors: true
+        path: 'users'
+        method: post
+    - http:
+        cors: true
+        path: 'users/{id}'
+        method: delete
