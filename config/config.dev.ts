@@ -1,12 +1,15 @@
 import { Dialect } from 'sequelize/types';
 
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 export const config = {
     database: {
         dialect: 'mysql' as Dialect,
-        host: process.env.DB_HOST,
-        port: parseInt(process.env.DB_PORT),
-        username: process.env.DB_USERNAME,
-        password: process.env.DB_PASSWORD,
-        database: process.env.DB_SCHEMA
+        host: process.env.DEV_DB_HOST,
+        port: parseInt(process.env.DEV_DB_PORT),
+        username: process.env.DEV_DB_USERNAME,
+        password: process.env.DEV_DB_PASSWORD,
+        database: process.env.DEV_DB_SCHEMA
     }
 };
