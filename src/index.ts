@@ -8,6 +8,9 @@ import * as express from 'express';
 
 let cachedServer: Server;
 
+import * as dotenv from 'dotenv';
+dotenv.config();
+
 const bootstrapServer = async (): Promise<Server> => {
   const expressApp = express();
   const adapter = new ExpressAdapter(expressApp);

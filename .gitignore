@@ -1,6 +1,9 @@
 # dependencies
 /node_modules
 
+# environment variables
+.env
+
 # IDE
 /.idea
 /.awcache
@@ -8,14 +11,6 @@
 
 # misc
 npm-debug.log
-
-# example
-/quick-start
-
-# tests
-/test
-/coverage
-/.nyc_output
 
 # dist
 /dist
